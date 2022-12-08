@@ -29,7 +29,7 @@ Follow the steps below:
   git clone [url project]
   ```
 * Open the project downloaded.
-![Open Project](img/webstorm_open.png)
+![Open Project](app/img/webstorm_open.png)
 
 
 ### Import project for use with Visual Studio Code
@@ -40,7 +40,7 @@ Follow the steps below:
   git clone [url project]
   ```
 * Open the project downloaded.
-  ![Open Project](img/VSC_open.png)
+  ![Open Project](app/img/VSC_open.png)
 
 
 ### Utilities

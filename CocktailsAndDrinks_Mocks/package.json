@@ -1,0 +1,24 @@
+{
+  "name": "Initial_Test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "export NODE_ENV=development && node app/app",
+    "pro": "export NODE_ENV=production && node app/app"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1"
+  }
+}
