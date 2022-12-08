@@ -4,7 +4,6 @@ const cors = require('cors');
 const app = express();
 const logger = require ('./config/logger');
 
-const db = require('./model/index');
 
 app.use(cors());
 // Configurar cabeceras y cors

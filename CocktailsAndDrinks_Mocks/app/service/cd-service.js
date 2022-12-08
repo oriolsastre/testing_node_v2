@@ -1,10 +1,12 @@
+const model = require('../model/cd-model')
 
-import { PrismaClient } from '@prisma/client';
-const prisma = new PrismaClient();
+const getAllCategories = () => {
 
+}
 
-const category = await prisma.tipos_vinos.findMany();
-console.log(category);
+module.exports = {
+    getAllCategories
+}
 
 
 
