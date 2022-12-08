@@ -1,8 +1,6 @@
 const model = require('../model/cd-model')
 
-const getAllCategories = () => {
-
-}
+const getAllCategories = () => model.allcategories;
 
 module.exports = {
     getAllCategories
