@@ -8,7 +8,16 @@
 <i>Agile + TDD</i>
 7. <b>Kata Agile.</b> Definición y planificación de etapas Scrum para el proyecto Cocktails&Drinks
 
+#### Versions
+
+- Node v18.12.1
+- npm v8.19.2
+- nvm v0.39.1
+
+
 #### Microservices
+
+
 
 
 ##### Bugs
