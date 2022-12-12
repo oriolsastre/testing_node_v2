@@ -7,6 +7,7 @@ const router = express.Router();
 const cdcontroller = require('../controller/cd-controller');
 
 router.get(config.BASE_URL.concat('/ping'), cdcontroller.ping);
+router.get(config.BASE_URL.concat('/categories'), cdcontroller.categories);
 
 
 module.exports = app;
