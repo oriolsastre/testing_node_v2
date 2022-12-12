@@ -13,7 +13,18 @@ const categories = (req, resp) => {
 
 }
 
+const stock = (req, resp) => {
+    cdservice.getStock().then(data => {
+        resp.status(200).json(data);
+    }).catch(err=> {
+        logger.error(err.toString());
+        resp.status(500).json([]);
+    });
+
+}
+
 module.exports = {
     ping,
-    categories
+    categories,
+    stock
 }
