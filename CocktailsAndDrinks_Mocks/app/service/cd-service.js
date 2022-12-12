@@ -1,12 +1,8 @@
 const model = require('../model/cd-model')
 
-const getAllCategories = () => model.allcategories;
+const getAllCategories = async() => await model.allcategories();
 
 module.exports = {
     getAllCategories
 }
-
-
-
-
 
