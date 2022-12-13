@@ -1,8 +1,8 @@
 const config = require('../config/config');
 const express = require('express');
 const model = require('../model/cd-model');
-const dotenv = require("dotenv");
-const path = require("path");
+
+const mockdb = require('./mock-db.test');
 
 
 //GET

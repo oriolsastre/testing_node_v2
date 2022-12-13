@@ -23,7 +23,7 @@ const transportConsole = new winston.transports.Console({
  */
 
 const transportDailyRotateFile = new winston.transports.DailyRotateFile({
-    filename: config.URL_LOGS + 'UAD_backend-%DATE%.log',
+    filename: config.URL_LOGS + 'testing_node_v2-%DATE%.log',
     level: 'warn',
     datePattern: 'YYYY-MM-DD',
     zippedArchive: true,
