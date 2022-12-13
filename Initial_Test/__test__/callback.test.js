@@ -13,7 +13,6 @@ test('Test mocking callback function', () => {
     expect(mockCallback.mock.calls[1][0]).toBe(1);
 // The return value of the first call to the function was 42
     expect(mockCallback.mock.results[0].value).toBe(42);
-
 // The mock function was called at least once
     expect(mockCallback).toHaveBeenCalled();
 // The mock function was called at least once with the specified args
