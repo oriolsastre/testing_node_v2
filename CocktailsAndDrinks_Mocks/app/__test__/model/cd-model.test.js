@@ -2,9 +2,10 @@ const config = require('../../config/config');
 const express = require('express');
 const model = require('../../model/cd-model');
 // ###### db mocks
-//sqlite - TODO populate correctly
+//Option 1: In memory DB - sqlite - TODO populate correctly
 //const mockdb = require('../config/sqlite-mock.db');
 
+//Option 2: Prisma Mock
 //PrismaClient mock - Dependency Injection
 const { MockContext, Context, createMockContext } = require('../config/prismaclient-mock');
 
