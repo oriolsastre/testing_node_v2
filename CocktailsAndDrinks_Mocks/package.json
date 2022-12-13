@@ -4,7 +4,7 @@
   "description": "",
   "main": "app/app.js",
   "scripts": {
-    "test": "jest",
+    "test": "export NODE_ENV=test && jest",
     "dev": "export NODE_ENV=development && node app/app",
     "pro": "export NODE_ENV=production && node app/app"
   },

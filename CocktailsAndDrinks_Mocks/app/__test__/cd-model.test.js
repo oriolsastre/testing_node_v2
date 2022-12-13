@@ -4,7 +4,6 @@ const model = require('../model/cd-model');
 const dotenv = require("dotenv");
 const path = require("path");
 
-dotenv.config({ path: path.resolve(__dirname, 'test.env') });
 
 //GET
 test('Assert retrieve data from Categories Table', async() => {
