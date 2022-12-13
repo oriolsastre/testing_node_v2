@@ -20,6 +20,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "jest-mock-extended": "^3.0.1",
     "path": "^0.12.7",
     "prisma": "^4.7.1",
     "winston": "^3.8.2",
