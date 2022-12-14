@@ -6,7 +6,7 @@
 Main structure of node.js project. Folders / files:
 
 - <b>\_\_tests__</b>. Tests folder. See [Jest Docs](https://jestjs.io/es-ES/docs/configuration) and [Chai Docs](https://www.chaijs.com/)
-- <b>app</b>:
+- <b>src</b>:
     - <b>config</b>
     - <b>controllers</b>
     - <b>crons</b>
@@ -21,6 +21,13 @@ Main structure of node.js project. Folders / files:
 - <b>.ecosystem.config.js</b>. Process Manage at runtime. See [PM2 Docs](https://pm2.keymetrics.io/).
 - <b>package.json</b>.
 
+
+### Libraries for testing
+
+- Sinon
+- Supertest
+- JEST
+- 
 ### Import project for use with WebStorm
 
 Follow the steps below:

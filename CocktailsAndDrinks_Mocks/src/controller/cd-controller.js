@@ -1,4 +1,4 @@
-const cdservice = require ('../service/cd-service');
+const CDService = require ('../service/cd-service');
 const logger = require ('../config/logger');
 
 const ping = (req, resp) => resp.status(200).send({'msg': 'pong'});

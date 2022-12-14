@@ -1,12 +1,13 @@
-const model = require('../model/cd-model')
 
-const getAllCategories = async() => await model.allcategories();
-const getCategory = async(id) => await model.category(id);
-const getStock = async() => await model.stock();
+const getAllCategories = async(Model) => await Model.allcategories();
+const getCategory = async(Model, id) => await Model.category(id);
+const getStock = async(Model) => await Model.stock();
 
-module.exports = {
-    getAllCategories,
-    getCategory,
-    getStock
+module.exports = Model => {
+    return {
+        getAllCategories : getAllCategories(Model),
+        getCategory: getCategory(Model, id),
+        getStock: getStock(Model)
+    }
 }
 
