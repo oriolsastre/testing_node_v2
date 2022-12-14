@@ -2,11 +2,11 @@
   "name": "Initial_Test",
   "version": "1.0.0",
   "description": "",
-  "main": "app/app.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "export NODE_ENV=test && jest",
-    "dev": "export NODE_ENV=development && node app/app",
-    "pro": "export NODE_ENV=production && node app/app"
+    "dev": "export NODE_ENV=development && node src/app",
+    "pro": "export NODE_ENV=production && node src/app"
   },
   "author": "",
   "license": "",
@@ -23,6 +23,8 @@
     "jest-mock-extended": "^3.0.1",
     "path": "^0.12.7",
     "prisma": "^4.7.1",
+    "sinon": "^15.0.0",
+    "supertest": "^6.3.3",
     "winston": "^3.8.2",
     "winston-daily-rotate-file": "^4.7.1"
   }
