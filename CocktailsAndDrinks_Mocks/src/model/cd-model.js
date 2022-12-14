@@ -2,7 +2,7 @@ const { PrismaClient}  = require('@prisma/client');
 const prisma = new PrismaClient();
 
 const allcategories = async() => await prisma.tipos_vinos.findMany();
-const category = async(ctx, idCategory) => await prisma.tipos_vinos.findUnique({
+const category = async(idCategory) => await prisma.tipos_vinos.findUnique({
     where: {
         ID_VINO: parseInt(idCategory)
     }

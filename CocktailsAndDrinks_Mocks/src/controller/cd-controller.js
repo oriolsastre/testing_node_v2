@@ -1,10 +1,10 @@
-const CDService = require ('../service/cd-service');
+const CDService = require('../service/index.service');
 const logger = require ('../config/logger');
 
 const ping = (req, resp) => resp.status(200).send({'msg': 'pong'});
 
 const categories = (req, resp) => {
-    cdservice.getAllCategories().then(data => {
+    CDService.getAllCategories.then(data => {
         resp.status(200).json(data);
     }).catch(err=> {
         logger.error(err.toString());
@@ -17,7 +17,7 @@ const category = (req, resp) => {
 
     let idCategory = req.params.idCategory;
 
-    cdservice.getCategory(idCategory).then(data => {
+    CDService.getCategory(idCategory).then(data => {
         resp.status(200).json(data);
     }).catch(err=> {
         logger.error(err.toString());
@@ -27,7 +27,7 @@ const category = (req, resp) => {
 }
 
 const stock = (req, resp) => {
-    cdservice.getStock().then(data => {
+    CDService.getStock.then(data => {
         resp.status(200).json(data);
     }).catch(err=> {
         logger.error(err.toString());

@@ -17,6 +17,6 @@ beforeEach(() => {
 });
 
 test('Assert retrieve data from Categories Table', async() => {
-    const data = await model.category(ctx,15);
+    const data = await model.category(15);
     expect(data.CATEGORIA).toBe("Whiskey");
 });
