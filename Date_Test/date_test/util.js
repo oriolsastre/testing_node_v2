@@ -11,8 +11,10 @@ const substring = (s, start, end) => s.substring(start, end);
 const formatDate1 = (date) => format(date, 'MM/dd/yyyy');
 const formatDate2 = (date) => format(date, 'dd-MM-yyyy');
 const formattedDateRu = (date) => format(date, 'MMMM dd, yyyy', { locale: russianLocale });
+//const formattedDateCat = (date) => format(date, 'MMMM dd, yyyy', { locale: 'Ca' });
 
 const daysBetween = (startDate, endDate) => differenceInDays(endDate, startDate);
 const workdaysBetween = (startDate, endDate) => differenceInBusinessDays(endDate, startDate);
 
 
+module.exports = {orderdates, substring, formatDate1, formatDate2, formattedDateRu, daysBetween, workdaysBetween}
